@@ -6,6 +6,7 @@
     --botao: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-efeito: #3c92fa;
 }
 
 /* Reset CSS */
@@ -56,6 +57,11 @@ body {
     color: var(--cor-principal);
     display: block;
     margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .botao_secundario {
@@ -130,6 +136,7 @@ body {
 
 .rodape__logo {
     width: 70px;
+    margin-bottom: 1.5em;
 }
 
 .rodape__lista {
@@ -142,11 +149,24 @@ body {
     text-decoration: none;
     color: var(--cor-principal);
     font-size: 12px;
-    margin: 0 0.5em;
+    margin: 0 0.8em;
+}
+
+.lista__link:hover {
+    color: var(--botao);
+}
+
+.lista__link:active {
+    color: purple;
 }
 
 .rodape__texto {
     color: var(--cor-secundaria);
     font-size: 10px;
-    margin: 2em 0;
+    margin: 1em 0;
+}
+
+.subtexto {
+    width: 60%;
+    display: inline-block;
 }
